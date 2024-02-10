@@ -12,6 +12,7 @@
     --transition-default: all 300ms ease-in-out;
 }
 
+
 html{
     scroll-behavior: smooth;
     -moz-osx-font-smoothing: grayscale;
@@ -140,6 +141,7 @@ button{
     height: 2px;
     background-color: var(--clr-white);
 }
+
 .navbar-show-btn{
     font-size: 24px;
     cursor: pointer;
@@ -149,6 +151,7 @@ button{
     display: none;
     cursor: pointer;
     transition: var(--transition-default);
+    color: white;
 }
 .navbar-hide-btn:hover{
     opacity: 0.8;

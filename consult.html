@@ -46,6 +46,92 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/images/Anuraj Clinic.png" type="image/x-icon">
+    <style>
+        /* Add this style to your existing CSS */
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .image-container {
+            flex: 1;
+
+        }
+
+        .image-container img {
+
+            width: 100%;
+            /* Make the image fill its container */
+            max-width: 250px;
+            /* Set a maximum width for the image */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 8px;
+            /* Optional: add border-radius for rounded corners */
+        }
+
+        /* Existing styles... */
+
+        .content-container {
+            flex: 2;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Media query for screens up to 768px */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+
+                /* Stack elements vertically on smaller screens */
+            }
+
+
+            .image-container img {
+                width: 55%;
+                margin-left: 98px;
+                margin-top: 37px;
+
+                /* Allow the image to take the full width of the container */
+                border-radius: 0;
+                /* Remove border-radius for full-width images */
+                margin-bottom: 20px;
+                /* Add some spacing between image and content */
+            }
+
+            .content-container {
+                padding: 10px;
+                /* Adjust padding for smaller screens */
+            }
+        }
+
+        @media (min-width: 769px) {
+
+
+
+            .image-container img {
+                display: none;
+                /* Hide only the image in laptop view */
+            }
+
+
+        }
+
+        *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 4px;
+            color: white;
+        }
+
+
+
+        /* You can adjust the padding, border-radius, or any other styles according to your design */
+    </style>
+
 </head>
 
 <body>
@@ -85,11 +171,18 @@
             </div>
         </div>
     </nav>
-    <div class="heading">
-        <h1 style="color: white;">Welcome to this hospital</h1>
-        <h3>Please contact <span> Mr. Sanjay Venkatpurwar</span></h3>
-        <address>At Post Barbada. Tq.Naigaon Dist. Nanded</address>
+    <!-- Place this inside the <body> tag, replacing your existing content -->
+    <div class="content">
+        <div class="image-container">
+            <img src="./assets/images/Dad's_Photo.png" alt="Description of the image">
+        </div>
+        <div class="content-container">
+            <h1 style="color: white;">Welcome to this hospital</h1>
+            <h3 style="color: white;">Please contact <span>Mr. Sanjay Venkatpurwar</span></h3>
+            <address style="color: white;">At Post Barbada. Tq.Naigaon Dist. Nanded</address>
+        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.4.js"
         integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <!-- owl carousel -->
