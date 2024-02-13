@@ -33,24 +33,49 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-top: 20px; /* Add some margin for spacing */
+            margin-top: 20px;
+            /* Add some margin for spacing */
         }
-        
+
         .map iframe {
             width: 70%;
-            height: 500px; /* Set a fixed height for the map */
+            height: 500px;
+            /* Set a fixed height for the map */
         }
-        
+
         /* Media query for 768px */
         @media only screen and (max-width: 768px) {
             .map {
-                margin-top: 10px; /* Adjust margin for smaller screens */
+                margin-top: 10px;
+                /* Adjust margin for smaller screens */
             }
-        
+
             .map iframe {
-                height: 300px; /* Adjust height for smaller screens */
+                height: 300px;
+                /* Adjust height for smaller screens */
             }
         }
+
+        .info {
+            text-align: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .info h2 {
+            color: rgb(240, 189, 127);
+            font-weight: bold;
+        }
+        .map-heading {
+            font-size: 24px;
+            transition: font-size 1s ease; /* Specify the property to transition, duration, and timing function */
+            cursor: pointer;
+        }
+
+        .map-heading:hover {
+            font-size: 36px;
+        }
+        
     </style>
 </head>
 
@@ -92,6 +117,9 @@
                     </div>
                 </div>
             </nav>
+            <div class="info">
+                <h2 class="map-heading">Welcome to the map</h2>
+            </div>
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.1404536791492!2d77.49276805209144!3d18.991220624234977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bce23e3e40a2dd5%3A0x836fa113e10a1967!2sAnuraj%20Clinic!5e0!3m2!1sen!2sin!4v1707632306103!5m2!1sen!2sin"
